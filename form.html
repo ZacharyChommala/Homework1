@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Form Page</title>
+  </head>
+  <body>
+    <!--Ariticles and Author -->
+    <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="Article">Article Title</label>
+        <input type="Article" class ="form-control"id="ARTICLE" placeholder="Article Title">
+      </div>
+      <div class="form-group">
+        <label for="Author">Author's Name</label>
+        <input type="Author" class="form-control" id="AUTHOR" placeholder="Author's Name">
+      </div>
+    </form>
+    </div>
+    <!--Files and others-->
+    <div class="container">
+    <form>
+      <div class="row">
+        <div class="col">
+          <div class="container mt-3">
+            <form action="/action_page.php">
+              <h3>Choose File</h3>
+              <input type="file" id="FILE" name="filename">
+              <div class="mt-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col">
+          <form class="form-group">
+            <h3>Pages</h3>
+            <label for="OPTIONS"></label>
+            <select class="form-control" name="OPTIONS">
+              <option>Academics</option>
+              <option>Database</option>
+              <option>Website</option>=
+            </select>
+          </form>
+        </div>
+      </div>
+    </form>
+  </div>
+
+<!--ARticle Text-->
+  <div class="container">
+    <form class="form-group">
+      <label for="ARTICLETEXT">Article Text</label>
+      <textarea class ="form-control" id="ARTICLETEXT" rows="10" cols="50"></textarea>
+    </form>
+  </div>
+<!--INLINE checkbox-->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h4>Select Tags</h4>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="BOX1" value="option1">
+          <label class="form-check-label" for="BOX1">Python</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="BOX2" value="option2">
+          <label class="form-check-label" for="BOX2">C++</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="BOX3" value="option3">
+          <label class="form-check-label" for="BOX3">Java</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="BOX4" value="option4">
+          <label class="form-check-label" for="BOX4">Scala</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="BOX5" value="option5">
+          <label class="form-check-label" for="BOX5">Perl</label>
+        </div>
+      </div>
+      <div class="col">
+        <!--VISIBLE VS INVISIBILE-->
+        <div style="margin-left:350px">
+          <label for="visibilitybutton"> <fontsize=5>Visibility </fontsize></label>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Public
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Private
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--log in to submit -->
+  <div class="container">
+    <h4>Log in to finish submitting</h4>
+    <div class="row">
+      <div class="col">
+        <form class="form-group">
+          <div class="form-group">
+            <label for="UserName">Username</label>
+            <input type="Username" class ="form-control"id="UserName" placeholder="Enter Username">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="RememberMe">
+            <label class="form-check-label" for="RememberMe">Remember Me</label>
+          </div>
+        </form>
+      </div>
+      <div class="col">
+        <form class="form-group">
+          <div class="form-group">
+            <label for="PassWord">Password</label>
+            <input type="PassWord" class ="form-control"id="PassWord" placeholder="Enter Password">
+          </div>
+        </form>
+      </div>
+    </div>
+    <button type="btn btn-primary" name="Submit"> Submit</button>
+  </div>
+
+  </body>
+</html>
